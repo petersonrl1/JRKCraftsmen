@@ -12,6 +12,7 @@ export const HeaderStyles = styled.header`
   padding: 1rem 2rem;
   background-color: #fff;
   transition: box-shadow var(--transMed) ease;
+  /* TODO: this may not be necessary, affects the nav to make the logo bigger */
   max-height: 72px;
 
   &.scrolled {
@@ -39,10 +40,10 @@ export const HeaderStyles = styled.header`
 
     img {
       vertical-align: middle;
-      width: 175px;
+      width: 125px;
 
       @media (min-width: 768px) {
-        width: 175px;
+        width: 150px;
       }
     }
 
