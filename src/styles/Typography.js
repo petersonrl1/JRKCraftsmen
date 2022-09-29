@@ -5,7 +5,7 @@ import "@fontsource/playfair-display"
 const Typography = createGlobalStyle`
 h1 {
   font-size: var(--h1);
-  margin: calc(var(--spacing) * 3) 0;
+  margin: calc(var(--spacing) * 2) 0;
 }
 
 p {
@@ -49,7 +49,7 @@ h4 {
 h5,
 h6 {
   color: var(--primaryColor);
-  margin: var(--spacing) 0;
+  margin: var(--spacing * 1.5) 0;
 }
 
 h2 {
@@ -117,7 +117,7 @@ ol {
   }
 
   > *:first-child {
-    margin-top: 0;
+    margin-top: .7em;
   }
 
   > *:last-child {
