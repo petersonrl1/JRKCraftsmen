@@ -12,9 +12,11 @@ export const HeaderStyles = styled.header`
   padding: 1rem 2rem;
   background-color: #fff;
   transition: box-shadow var(--transMed) ease;
+  /* TODO: this may not be necessary, affects the nav to make the logo bigger */
+  max-height: 72px;
 
   &.scrolled {
-    box-shadow: -1px 5px 11px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 5px 11px 0px rgba(0, 0, 0, 0.4);
   }
 
   .logo-cont {

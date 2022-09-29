@@ -74,19 +74,19 @@ const GlobalStyles = createGlobalStyle`
   .main-body {
     padding: calc(var(--spacing) * 4) calc(var(--spacing) * 2)
       calc(var(--spacing) * 4) calc(var(--spacing) * 2);
-    max-width: 450px;
+    max-width: 550px;
     margin-left: auto;
     margin-right: auto;
 
     @media (min-width: 768px) {
-      padding: calc(var(--spacing) * 6) calc(var(--spacing) * 2)
-        calc(var(--spacing) * 6) calc(var(--spacing) * 2);
+      padding: calc(var(--spacing) * 6.2) calc(var(--spacing) * 2)
+        calc(var(--spacing) * 4) calc(var(--spacing) * 2);
 
-      max-width: 600px;
+      max-width: 630px;
     }
 
     @media (min-width: 1200px) {
-      max-width: 860px;
+      max-width: 900px;
     }
   }
 

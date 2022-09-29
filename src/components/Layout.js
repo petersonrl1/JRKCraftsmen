@@ -4,7 +4,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
-import Logo from "../content/images/bonneville-logo.svg"
+import Logo from "../images/JRK_notext_nocircle.png"
 import { motion } from "framer-motion"
 import CookieConsent from "react-cookie-consent"
 
