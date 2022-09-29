@@ -4,7 +4,9 @@ import Header from "./Header"
 import Footer from "./Footer"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
-import Logo from "../images/JRK_notext_nocircle.png"
+import Logo from "../content/images/bonneville-logo.svg"
+import LogoFooter from "../content/images/bonneville-logo.svg"
+
 import { motion } from "framer-motion"
 import CookieConsent from "react-cookie-consent"
 
@@ -21,7 +23,7 @@ const Layout = ({ children }) => {
         <Typography />
         <Header Logo={Logo} />
         <main className="main-body">{children}</main>
-        <Footer Logo={Logo} />
+        <Footer LogoFooter={LogoFooter} alt="logo" />
         <CookieConsent
           location="bottom"
           buttonText="Okay"
