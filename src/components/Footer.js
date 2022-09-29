@@ -8,7 +8,7 @@ import {
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
-const Footer = ({ Logo }) => {
+const Footer = ({ LogoFooter }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -27,23 +27,23 @@ const Footer = ({ Logo }) => {
   return (
     <FooterStyles>
       <div className="flex">
-        {Logo ? (
+        {LogoFooter ? (
           <div className="brand-cont">
             {/* If there is a logo, render this */}
-            {Logo && (
+            {LogoFooter && (
               <Link to="/">
-                <img src={Logo} alt={footerData.title} />
+                <img src={LogoFooter} alt="logo" />
               </Link>
             )}
             <address>
-              85 Simone Weil Avenue
+              274 Meadowview Drive
               <br />
-              Watton-at-Stone
+              Downingtown PA 19335
               <br />
-              SG14 8BL
+              
             </address>
-            <a className="telephone" href="tel:+004407076009211">
-              07076 009 211
+            <a className="telephone" href="tel:+8023777509">
+              802 377 7509
             </a>
           </div>
         ) : null}
@@ -65,6 +65,16 @@ const Footer = ({ Logo }) => {
                   ))}
               </ul>
             )}
+            {/* If footer menu items are being imported, render this */}
+            {footerMenuItems && (
+              <ul className="footer-menu">
+                {footerMenuItems.map((item, index) => (
+                  <li key={`footerMenuItem${index}`}>
+                    <Link to={item.path}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            )}
 
             {/* If social menu items are being imported, render this */}
             {socialMenuItems && (
@@ -77,7 +87,7 @@ const Footer = ({ Logo }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {item.name}
+                        {item.icon}
                       </a>
                     </li>
                   )
@@ -85,16 +95,7 @@ const Footer = ({ Logo }) => {
               </ul>
             )}
 
-            {/* If footer menu items are being imported, render this */}
-            {footerMenuItems && (
-              <ul className="footer-menu">
-                {footerMenuItems.map((item, index) => (
-                  <li key={`footerMenuItem${index}`}>
-                    <Link to={item.path}>{item.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            )}
+            
           </div>
         ) : null}
 
@@ -180,8 +181,8 @@ const FooterStyles = styled.footer`
   }
 
   @media (min-width: 768px) {
-    padding-top: calc(var(--spacing) * 4);
-    padding-bottom: calc(var(--spacing) * 4);
+    padding-top: calc(var(--spacing) * 2);
+    padding-bottom: calc(var(--spacing) * 2);
   }
 
   .brand-cont,
@@ -209,10 +210,12 @@ const FooterStyles = styled.footer`
     flex-shrink: 0;
     margin-bottom: calc(var(--spacing) * 2);
     padding: 0;
-    margin-bottom: calc(var(--spacing) * 2);
 
     &:last-child {
       margin-bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
     }
 
     @media (min-width: 375px) {
@@ -243,19 +246,25 @@ const FooterStyles = styled.footer`
   }
 
   .brand-cont {
-    width: 125px;
+    width: 11em;
 
     @media (min-width: 600px) {
       width: 150px;
       flex-basis: 150px;
       flex-shrink: 0;
       flex-grow: 0;
+
+      address {
+        white-space:nowrap;
+      }
     }
   }
+  
 
   .menus-cont {
     @media (min-width: 375px) {
       display: flex;
+      justify-content: space-between;
     }
 
     @media (min-width: 600px) {

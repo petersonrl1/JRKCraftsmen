@@ -21,7 +21,7 @@ const Header = ({Logo}) => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 50)
+      setScroll(window.scrollY > 5)
     })
   }, [])
 
@@ -29,7 +29,10 @@ const Header = ({Logo}) => {
     <HeaderStyles className={scroll ? "scrolled" : null}>
       <div className="logo-cont">
         <Link to="/">
-          <img src={Logo} alt={data.site.siteMetadata.title} />
+          {/* 
+          TODO: add logo back in here
+          <img src={Logo} alt={data.site.siteMetadata.title} /> */}
+          LOGO HERE
         </Link>
       </div>
       <Burger />

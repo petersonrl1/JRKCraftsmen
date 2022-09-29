@@ -65,7 +65,7 @@ SEO.defaultProps = {
   title: null,
   description: null,
   image: null,
-  lang: `en`,
+  lang: `en-US`,
   article: false,
 }
 
