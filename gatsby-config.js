@@ -4,17 +4,17 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-module.exports = {
+ module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Bonneville`,
-    titleTemplate: `%s | A starter theme for Gatsby`,
-    description: `A starter theme for Gatsby`,
-    siteUrl: `https://bonneville.netlify.com`,
+    title: `JRK Craftsmen`,
+    titleTemplate: ``,
+    description: `website for JRK Craftsmen`,
+    siteUrl: `https://jrkcraftsmen.com`,
     image: `/images/color.jpg`,
-    author: `Morgan Baker`,
-    authorSite: `https://www.morganbaker.dev`,
-    twitterUsername: `@bonneville`,
+    author: `LP Web Design`,
+    authorSite: ``,
+    twitterUsername: ``,
     twitterURL: `https://twitter.com/`,
     linkedInURL: `https://www.linkedin.com/in/morgan-baker-development/`,
     githubURL: `https://github.com/bagseye`,
