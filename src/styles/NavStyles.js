@@ -12,9 +12,10 @@ export const HeaderStyles = styled.header`
   padding: 1rem 2rem;
   background-color: #fff;
   transition: box-shadow var(--transMed) ease;
+  max-height: 72px;
 
   &.scrolled {
-    box-shadow: -1px 5px 11px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 5px 11px 0px rgba(0, 0, 0, 0.4);
   }
 
   .logo-cont {
@@ -38,10 +39,10 @@ export const HeaderStyles = styled.header`
 
     img {
       vertical-align: middle;
-      width: 125px;
+      width: 175px;
 
       @media (min-width: 768px) {
-        width: 150px;
+        width: 175px;
       }
     }
 
