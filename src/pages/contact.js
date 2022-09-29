@@ -1,9 +1,11 @@
 import React from "react"
 import Seo from "../components/SEO"
 import styled from "styled-components"
-import Button from "../components/Button"
 import Banner from "../components/Banner"
 import Layout from "../components/Layout"
+import Iframe from "../components/Iframe"
+
+
 
 const Form = styled.div`
   margin: calc(var(--spacing) * 2) 0;
@@ -43,22 +45,25 @@ const FormTextArea = styled.textarea`
 const ContactPage = () => {
   return (
     <>
+    {/* <Script id="hello-world">{`console.log('Hello world!')`}</Script> */}
       <Seo
         title="Get in touch"
-        description="Contact Bonneville about your next project"
+        description="Contact JRK Craftsmen about your next project"
       />
       <Layout>
-        <Banner content="Get in touch today" />
-        <p>
-          Fusce eu tincidunt felis. Ut auctor urna et nibh lacinia, id efficitur
-          ipsum blandit. Aliquam vulputate sapien sit amet ante varius
-          vestibulum. Morbi sodales, quam quis tincidunt venenatis, nibh lorem
-          viverra velit, ac ultrices ligula nisi id justo. Vestibulum imperdiet
-          fermentum ante eu fermentum. Sed et orci pretium, ullamcorper nisi
-          nec, dignissim erat. Sed eu consequat neque, interdum malesuada eros.
-          Ut maximus gravida malesuada.{" "}
-        </p>
-        <Form>
+        <Banner
+          content="JRK Craftsmen"
+          copy="Get in touch!"
+        />
+        
+          <Iframe 
+            src="https://buildertrend.net/leads/contactforms/ContactFormFrame.aspx?builderID=82966"
+            title="BuilderTrend contact form"
+            width="750"
+          />
+        
+        
+        {/* <Form>
           <form name="contact" netlify>
             <p>
               <FormLabel for="name">Your Name</FormLabel>
@@ -76,10 +81,16 @@ const ContactPage = () => {
               <Button className="btn-link" text="Send Message" type="submit" />
             </p>
           </form>
-        </Form>
+        </Form> */}
       </Layout>
     </>
   )
 }
 
 export default ContactPage
+
+export function Head() {
+  return (
+    <script type="text/javascript" src="https://buildertrend.net/leads/contactforms/js/btClientContactForm.js"></script> 
+  )
+}
