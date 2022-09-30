@@ -187,7 +187,7 @@ const FooterStyles = styled.footer`
 
   .brand-cont,
   .brand-cont img {
-    margin-bottom: calc(var(--spacing) * 2);
+    margin-bottom: calc(var(--spacing) * 1);
   }
 
   .brand-cont {

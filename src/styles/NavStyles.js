@@ -13,7 +13,7 @@ export const HeaderStyles = styled.header`
   background-color: #fff;
   transition: box-shadow var(--transMed) ease;
   /* TODO: this may not be necessary, affects the nav to make the logo bigger */
-  max-height: 72px;
+  /* max-height: 72px; */
 
   &.scrolled {
     box-shadow: -1px 5px 11px 0px rgba(0, 0, 0, 0.4);
@@ -40,10 +40,10 @@ export const HeaderStyles = styled.header`
 
     img {
       vertical-align: middle;
-      width: 125px;
+      width: 110px;
 
       @media (min-width: 768px) {
-        width: 150px;
+        width: 130px;
       }
     }
 
@@ -93,7 +93,7 @@ export const NavigationStyles = styled.nav`
       padding-left: 2rem;
       margin-top: 1rem;
       margin-bottom: 1rem;
-      font-size: 1.15rem;
+      font-size: 1.25rem;
       font-family: "Playfair Display";
       font-weight: 300;
     }

@@ -35,7 +35,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       name: "404",
       title:
-        "This is the error page. You can change this title in gatsby-node.js",
+        "OOPS! The page you are looking for doesn't exist.",
     },
   ]
   pageData.forEach((page) => {
