@@ -28,11 +28,8 @@ const Header = ({Logo}) => {
   return ( 
     <HeaderStyles className={scroll ? "scrolled" : null}>
       <div className="logo-cont">
-        <Link to="/">
-          {/* 
-          TODO: add logo back in here
-          <img src={Logo} alt={data.site.siteMetadata.title} /> */}
-          LOGO HERE
+        <Link to="/">         
+          <img src={Logo} alt={data.site.siteMetadata.title} />
         </Link>
       </div>
       <Burger />
