@@ -16,7 +16,7 @@
     authorSite: ``,
     twitterUsername: ``,
     twitterURL: `https://twitter.com/`,
-    linkedInURL: `https://www.linkedin.com/in/morgan-baker-development/`,
+    linkedInURL: `https://www.linkedin.com/in/jonathan-kauffman-81561a80/`,
     githubURL: `https://github.com/`,
   },
   plugins: [
