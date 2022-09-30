@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Seo from "../components/SEO"
 import Banner from "../components/Banner"
 import Layout from "../components/Layout"
@@ -9,7 +8,6 @@ import BlurbImage from "../components/BlurbImage"
 
 
 const HomePage = ({ data }) => {
-  const { BlogPostQuery } = data
 
   return (
     <>
@@ -31,33 +29,33 @@ const HomePage = ({ data }) => {
 
 export default HomePage
 
-export const query = graphql`
-  {
-    BlogPostQuery: allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-    ) {
-      totalCount
-      edges {
-        node {
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YY")
-            path
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(
-                  layout: FULL_WIDTH
-                  placeholder: TRACED_SVG
-                  formats: [AUTO, WEBP]
-                )
-              }
-            }
-            featuredImageAlt
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   {
+//     BlogPostQuery: allMarkdownRemark(
+//       sort: { fields: [frontmatter___date], order: DESC }
+//       limit: 3
+//     ) {
+//       totalCount
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//             date(formatString: "MMMM DD, YY")
+//             path
+//             featuredImage {
+//               childImageSharp {
+//                 gatsbyImageData(
+//                   layout: FULL_WIDTH
+//                   placeholder: TRACED_SVG
+//                   formats: [AUTO, WEBP]
+//                 )
+//               }
+//             }
+//             featuredImageAlt
+//           }
+//           excerpt
+//         }
+//       }
+//     }
+//   }
+// `

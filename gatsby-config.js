@@ -20,7 +20,7 @@
     githubURL: `https://github.com/`,
   },
   plugins: [
-    `gatsby-plugin-netlify`,
+    // `gatsby-plugin-netlify`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -34,7 +34,7 @@
         background_color: `#0027EC`,
         theme_color: `#0027EC`,
         display: `standalone`,
-        icon: `static/favicon.ico`,
+        icon: `static/favicon-32x32.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
