@@ -5,7 +5,8 @@ import "@fontsource/playfair-display"
 const Typography = createGlobalStyle`
 h1 {
   font-size: var(--h1);
-  margin: calc(var(--spacing) * 2) 0;
+  /* margin: calc(var(--spacing) * 2) 0; */
+  margin: calc(var(--spacing) * 6) 0 var(--spacing) 0;
 }
 
 p {
