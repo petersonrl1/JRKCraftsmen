@@ -10,25 +10,25 @@ export function wrapRootElement({ element }) {
   return <MenuProvider>{element}</MenuProvider>
 }
 
-export const shouldUpdateScroll = ({
-  routerProps: { location },
-  getSavedScrollPosition,
-}) => {
-  // Transition duration from layout.js * 1000 to get ms
-  // * 2 for exit + enter animation
-  const TRANSITION_DELAY = 0.5 * 1000 * 2
+// export const shouldUpdateScroll = ({
+//   routerProps: { location },
+//   getSavedScrollPosition,
+// }) => {
+//   // Transition duration from layout.js * 1000 to get ms
+//   // * 2 for exit + enter animation
+//   const TRANSITION_DELAY = 0.5 * 1000 * 2
 
-  // If it is a normal route
-  if (location.action === "PUSH") {
-    window.setTimeout(() => window.scrollTo(0, 0), TRANSITION_DELAY)
-  }
+//   // If it is a normal route
+//   if (location.action === "PUSH") {
+//     window.setTimeout(() => window.scrollTo(0, 0), TRANSITION_DELAY)
+//   }
 
-  // If we used the browsers forward or back button
-  else {
-    const savedPosition = getSavedScrollPosition(location) || [0, 0]
+//   // If we used the browsers forward or back button
+//   else {
+//     const savedPosition = getSavedScrollPosition(location) || [0, 0]
 
-    window.setTimeout(() => window.scrollTo(...savedPosition), TRANSITION_DELAY)
-  }
+//     window.setTimeout(() => window.scrollTo(...savedPosition), TRANSITION_DELAY)
+//   }
 
-  return false
-}
+//   return false
+// }
