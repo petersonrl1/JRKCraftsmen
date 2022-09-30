@@ -1,18 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Seo from "../components/SEO"
-import BlogItem from "../components/BlogItem"
-import styled from "styled-components"
 import Banner from "../components/Banner"
 import Layout from "../components/Layout"
 import BannerImage from "../components/BannerImage"
 import Blurb from "../components/Blurb"
 import BlurbImage from "../components/BlurbImage"
 
-const FeaturedItems = styled.h4`
-  font-size: var(--h5);
-  color: var(--primaryColor);
-`
 
 const HomePage = ({ data }) => {
   const { BlogPostQuery } = data
@@ -30,16 +24,10 @@ const HomePage = ({ data }) => {
           copy="From custom cabinentry to whole home renovation, we get things done"
         />
         <BlurbImage />
-        {/* <FeaturedItems>{BlogPostQuery.totalCount} Featured Posts</FeaturedItems>
-        {BlogPostQuery.edges.map(({ node }, index) => (
-          <BlogItem nodeObj={node} index={index} />
-        ))} */}
       </Layout>
     </>
   )
 }
-
-
 
 export default HomePage
 
