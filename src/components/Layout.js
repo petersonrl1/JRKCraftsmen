@@ -4,7 +4,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import GlobalStyles from "../styles/GlobalStyles"
 import Typography from "../styles/Typography"
-import Logo from "../images/JRK_notext_circle.png"
+import Logo from "../images/JRK_notext_nocircle.png"
 import LogoFooter from "../images/JRK_circle_logo_footer.png"
 
 import { motion } from "framer-motion"
