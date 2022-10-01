@@ -34,7 +34,7 @@
         background_color: `#0027EC`,
         theme_color: `#0027EC`,
         display: `standalone`,
-        icon: `static/favicon-32x32.png`,
+        icon: `static/j-favicon-32x32.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

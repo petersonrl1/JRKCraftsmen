@@ -35,15 +35,13 @@ const Footer = ({ LogoFooter }) => {
                 <img src={LogoFooter} alt="logo" />
               </Link>
             )}
+            {/* TODO: increase font size for town and everything in the footer */}
             <address>
-              274 Meadowview Drive
+              Downingtown, PA 19335
               <br />
-              Downingtown PA 19335
-              <br />
-              
             </address>
             <a className="telephone" href="tel:+8023777509">
-              802 377 7509
+              484 782 4374
             </a>
           </div>
         ) : null}
