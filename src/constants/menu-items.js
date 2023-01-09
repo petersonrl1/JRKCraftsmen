@@ -30,13 +30,13 @@ export const socialMenuItems = [
   },
 ]
 
-// export const footerMenuItems = [
-//   {
-//     path: "/privacy",
-//     title: "privacy",
-//   },
-//   {
-//     path: "/cookies",
-//     title: "cookies",
-//   },
-// ]
+export const footerMenuItems = [
+  // {
+  //   path: "/privacy",
+  //   title: "privacy",
+  // },
+  // {
+  //   path: "/cookies",
+  //   title: "cookies",
+  // },
+]
