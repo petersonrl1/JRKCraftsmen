@@ -50,6 +50,7 @@ export const HeaderStyles = styled.header`
     h2 {
       margin: 0;
       font-size: 1.5rem;
+      align-items: center;
 
       @media (min-width: 768px) {
         font-size: 1.75rem;
