@@ -197,7 +197,7 @@ const FooterStyles = styled.footer`
     }
 
     img {
-      width: 90%;
+      width: 84%;
     }
   }
 
