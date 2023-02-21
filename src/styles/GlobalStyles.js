@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --primaryColor: #939393;
     --serif: "Playfair Display", serif;
     --sansSerif: "Lato", sans-serif;
-    --h1: 2rem;
+    --h1: 3rem;
     --h2: 1.8rem;
     --h3: 1.5rem;
     --h4: 1.25rem;
@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
     --spacing: 1rem;
 
     @media (min-width: 768px) {
-      --h1: 2.6rem;
+      --h1: 3.6rem;
       --h2: 2.4rem;
       --h3: 1.75rem;
       --h4: 1.5rem;
@@ -32,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     @media (min-width: 1200px) {
-      --h1: 3rem;
+      --h1: 3.6rem;
       --h2: 2.8rem;
       --h3: 2rem;
       --h4: 1.75rem;
