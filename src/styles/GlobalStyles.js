@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
     --h4: 1.25rem;
     --h5: 1.15rem;
     --h6: 1rem;
-    --footerMenuItem: 0.85rem;
+    --footerMenuItem: 1.15rem;
     --para: 1rem;
     --spacing: 1rem;
 
