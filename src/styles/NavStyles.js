@@ -40,10 +40,10 @@ export const HeaderStyles = styled.header`
 
     img {
       vertical-align: middle;
-      width: 86px;
+      width: 76px;
 
       @media (min-width: 768px) {
-        width: 110px;
+        width: 80px;
       }
     }
 
