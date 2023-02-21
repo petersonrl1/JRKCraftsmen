@@ -15,11 +15,11 @@ const HomePage = ({ data }) => {
       <Layout>
         <Banner
           content="JRK Craftsmen"
-          copy="Renovating homes and creating hospitable spaces all to glorify Jesus."
+          // copy="Renovating homes and creating hospitable spaces all to glorify Jesus."
         />
         <BannerImage />
         <Blurb
-          copy="From custom cabinentry to whole home renovation, we get things done"
+          copy="A construction company specializing in high quality residential remodels and custom woodwork."
         />
         <BlurbImage />
       </Layout>

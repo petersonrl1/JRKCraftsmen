@@ -23,11 +23,11 @@ export const socialMenuItems = [
     name: "Instagram",
   },
   
-  {
-    icon: <FaLinkedin size={45} />,
-    url: "https://www.linkedin.com/in/jonathan-kauffman-81561a80",
-    name: "LinkedIn",
-  },
+  // {
+  //   icon: <FaLinkedin size={45} />,
+  //   url: "https://www.linkedin.com/in/jonathan-kauffman-81561a80",
+  //   name: "LinkedIn",
+  // },
 ]
 
 export const footerMenuItems = [
