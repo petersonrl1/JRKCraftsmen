@@ -87,6 +87,7 @@ export const NavigationStyles = styled.nav`
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
     text-transform: capitalize;
 
     li {
