@@ -37,7 +37,7 @@ const Footer = ({ LogoFooter }) => {
             )}
             {/* TODO: increase font size for town and everything in the footer */}
             <address>
-              Downingtown, PA 19335
+              Downingtown, PA
               <br />
             </address>
             <a className="telephone" href="tel:+8023777509">
@@ -152,7 +152,6 @@ const FooterStyles = styled.footer`
 
   address {
     font-style: normal;
-    margin-bottom: var(--spacing);
   }
 
   li {
@@ -198,7 +197,7 @@ const FooterStyles = styled.footer`
     }
 
     img {
-      width: 100%;
+      width: 84%;
     }
   }
 
@@ -232,7 +231,7 @@ const FooterStyles = styled.footer`
     }
 
     @media (min-width: 1200px) {
-      flex-basis: 175px;
+      flex-basis: 80px;
     }
   }
 
@@ -284,6 +283,7 @@ const FooterStyles = styled.footer`
     li {
       display: inline;
       margin-right: var(--spacing);
+      font-size: 0.75em;;
     }
   }
 `

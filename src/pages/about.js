@@ -10,12 +10,7 @@ const AboutPage = () => (
         content="Who is JRK Craftsmen?"
       />
       <p>
-        We are a husband and wife team helpging to create beautiful spaces for our clients throughout Chester County.
-      </p>
-      <h3>Where It Began</h3>
-      <p>
-        {/* TODO: add  "Where it Began" copy here  */}
-        <strong>add copy here about Jon's background, something personal about you guys working together, etc. We can replace the below image with a pic of the family, just you guys, whatever you want  ;)</strong>
+        We are a husband and wife team helping to create beautiful spaces for our clients all over Chester County.
       </p>
       <AboutImage
       />

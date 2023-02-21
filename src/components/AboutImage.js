@@ -16,9 +16,8 @@ export default function AboutImage (props) {
             <StaticImage
               className="banner__image"
               imgClassName="banner__image--content"
-              //   TODO: replace with jon and jordan picture
-              src="../content/images/happyCouple-unsplash.jpg"
-              alt="Banner Image"
+              src="../content/images/Reverence_Newborn21-24.jpg"
+              alt="About Page Image"
               layout="fullWidth"
               placeholder="blurred"
             />

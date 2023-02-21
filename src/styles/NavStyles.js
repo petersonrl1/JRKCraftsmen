@@ -40,16 +40,17 @@ export const HeaderStyles = styled.header`
 
     img {
       vertical-align: middle;
-      width: 86px;
+      width: 74px;
 
       @media (min-width: 768px) {
-        width: 110px;
+        width: 78px;
       }
     }
 
     h2 {
       margin: 0;
       font-size: 1.5rem;
+      align-items: center;
 
       @media (min-width: 768px) {
         font-size: 1.75rem;
@@ -87,6 +88,7 @@ export const NavigationStyles = styled.nav`
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
     text-transform: capitalize;
 
     li {
