@@ -37,7 +37,7 @@ const Footer = ({ LogoFooter }) => {
             )}
             {/* TODO: increase font size for town and everything in the footer */}
             <address>
-              Downingtown, PA 19335
+              Downingtown, PA
               <br />
             </address>
             <a className="telephone" href="tel:+8023777509">
