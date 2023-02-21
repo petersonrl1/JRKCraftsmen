@@ -16,7 +16,7 @@ export default function Little (props) {
             <StaticImage
               className="banner__image"
               imgClassName="banner__image--content"
-              src={"../content/images/Copy of JRKCraftsmen_CarnuccioHouse-33.jpeg"}
+              src={"../content/images/Copy of JRKCraftsmen_CarnuccioHouse-30.jpeg"}
               alt="Banner Image"
               layout="fullWidth"
               placeholder="blurred"
