@@ -28,17 +28,17 @@
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bonneville - Gatsby Starter Theme`,
-        short_name: `Bonneville`,
+        name: `Jrk Craftsmen`,
+        short_name: `jrk`,
         start_url: `/`,
-        background_color: `#0027EC`,
-        theme_color: `#0027EC`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `standalone`,
-        icon: `static/j-favicon-32x32.png`,
+        icon: `static/favicon-32x32.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
