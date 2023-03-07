@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
 import GlobalStyles from "../styles/GlobalStyles"
@@ -8,7 +7,6 @@ import Logo from "../images/JRK_notext_nocircle.png"
 import LogoFooter from "../images/JRK_circle_logo_footer.png"
 
 import { motion } from "framer-motion"
-import CookieConsent from "react-cookie-consent"
 
 const Layout = ({ children }) => {
   return (
