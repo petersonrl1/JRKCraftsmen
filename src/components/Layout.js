@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         <Header Logo={Logo} />
         <main className="main-body">{children}</main>
         <Footer LogoFooter={LogoFooter} alt="logo" />
-        <CookieConsent
+        {/* <CookieConsent
           location="bottom"
           buttonText="Okay"
           cookieName="bonnevilleCookie"
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
             privacy statement
           </Link>
           .
-        </CookieConsent>
+        </CookieConsent> */}
       </motion.div>
     </>
   )

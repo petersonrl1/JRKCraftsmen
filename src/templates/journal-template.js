@@ -70,29 +70,29 @@ const JournalTemplate = (props) => {
 
 export default JournalTemplate
 
-export const journalQuery = graphql`
-  query journalQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YY")
-            path
-            tags
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`
+// export const journalQuery = graphql`
+//   query journalQuery($skip: Int!, $limit: Int!) {
+//     allMarkdownRemark(
+//       sort: { fields: [frontmatter___date], order: DESC }
+//       limit: $limit
+//       skip: $skip
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//             date(formatString: "MMMM DD, YY")
+//             path
+//             tags
+//             featuredImage {
+//               childImageSharp {
+//                 gatsbyImageData(layout: FULL_WIDTH)
+//               }
+//             }
+//           }
+//           excerpt
+//         }
+//       }
+//     }
+//   }
+// `
