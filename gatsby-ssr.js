@@ -3,7 +3,7 @@ import { MenuProvider } from "./src/components/MenuContext"
 import { AnimatePresence } from "framer-motion"
 
 export function wrapPageElement({ element }) {
-  return <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
+  return <AnimatePresence>{element}</AnimatePresence>
 }
 
 export function wrapRootElement({ element }) {
