@@ -23,7 +23,6 @@ h6 {
   font-weight: 400;
 }
 
-hr,
 blockquote,
 table,
 ol,
@@ -99,8 +98,9 @@ blockquote {
 }
 
 hr {
-  border: 0.1rem solid var(--primaryColor);
+  border: 0.1rem solid var(--black);
   opacity: 0.15;
+  margin: calc(var(--spacing) * 2) 0;
 }
 
 ul,
