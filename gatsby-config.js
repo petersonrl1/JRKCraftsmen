@@ -9,7 +9,7 @@
   siteMetadata: {
     title: `JRK Craftsmen`,
     titleTemplate: ``,
-    description: `website for JRK Craftsmen`,
+    description: `JRK Craftsmen`,
     siteUrl: `https://jrkcraftsmen.com`,
     image: `/images/color.jpg`,
     author: `LP Web Design, LLC`,

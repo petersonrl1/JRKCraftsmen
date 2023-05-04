@@ -2,12 +2,12 @@ import React from "react"
 import Seo from "../components/SEO"
 import Banner from "../components/Banner"
 import Layout from "../components/Layout"
-import BannerImage from "../components/BannerImage"
-import Blurb from "../components/Blurb"
-import BlurbImage from "../components/BlurbImage"
+import ImageCarousel from "../components/ImageCarousel"
+import { graphql } from "gatsby"
 
 
 const HomePage = ({ data }) => {
+  const project1Images = data.project1Images.edges
 
   return (
     <>
@@ -15,47 +15,29 @@ const HomePage = ({ data }) => {
       <Layout>
         <Banner
           content="JRK Craftsmen"
-          // copy="Renovating homes and creating hospitable spaces all to glorify Jesus."
-        />
-        <BannerImage />
-        <Blurb
           copy="A construction company specializing in high quality residential remodels and custom woodwork."
         />
-        <BlurbImage />
+        <ImageCarousel images={project1Images} />
       </Layout>
     </>
   )
 }
 
-export default HomePage
+export const query = graphql`
+  query {
+    project1Images: allFile(
+      filter: { relativeDirectory: { eq: "images/project1" } }
+    ) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            gatsbyImageData(width: 3000)
+          }
+        }
+      }
+    }
+  }
+`
 
-// export const query = graphql`
-//   {
-//     BlogPostQuery: allMarkdownRemark(
-//       sort: { fields: [frontmatter___date], order: DESC }
-//       limit: 3
-//     ) {
-//       totalCount
-//       edges {
-//         node {
-//           frontmatter {
-//             title
-//             date(formatString: "MMMM DD, YY")
-//             path
-//             featuredImage {
-//               childImageSharp {
-//                 gatsbyImageData(
-//                   layout: FULL_WIDTH
-//                   placeholder: TRACED_SVG
-//                   formats: [AUTO, WEBP]
-//                 )
-//               }
-//             }
-//             featuredImageAlt
-//           }
-//           excerpt
-//         }
-//       }
-//     }
-//   }
-// `
+export default HomePage
