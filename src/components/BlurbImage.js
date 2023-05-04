@@ -16,7 +16,7 @@ export default function BlurbImage (props) {
             <StaticImage
               className="banner__image"
               imgClassName="banner__image--content"
-              src="../content/images/Copy of JRKCraftsmen_CarnuccioHouse-33.jpeg"
+              src="../content/images/project1/2-kitchen.jpeg"
               alt="Banner Image"
               layout="fullWidth"
               placeholder="blurred"

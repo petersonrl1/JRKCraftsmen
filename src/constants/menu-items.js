@@ -1,5 +1,5 @@
 import React from "react"
-import { FaLinkedin, FaInstagram } from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa"
 
 export const mainMenuItems = [
   {
@@ -11,9 +11,13 @@ export const mainMenuItems = [
     title: "about",
   },
   {
+    path: "/projects",
+    title: "projects",
+  },
+  {
     path: "/contact",
     title: "contact",
-  },
+  }
 ]
 
 export const socialMenuItems = [
